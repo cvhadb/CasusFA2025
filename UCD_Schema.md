@@ -18,13 +18,15 @@
 │       ├──► UC09: Plant details bekijken                         │ 
 │       ├──► UC10: Notificaties bekijken                          │ 
 │       ├──► UC11: Takenplanning per werknemer bekijken           │ 
-│       ├──► UC12: Taken herplannen bij afwezigheid               │ 
+│       ├──► UC12: Taken herplannen bij afwezigheid               │
+│       ├──► UC14: Eigen planning bekijken                        │ 
 │       └──► UC16: Taken overzicht bekijken                       │ 
 │                                                                 │ 
 │  ┌───────────┐                                                  │ 
 │  │ Supervisor│                                                  │ 
 │  └─────┬─────┘                                                  │ 
-│        │                                                        │ 
+│        │                                                        │
+│        ├──► UC04: Centraal planningsbord gebruiken              │ 
 │        ├──► UC09: Plant details bekijken                        │ 
 │        ├──► UC08: Dashboard met KPI's bekijken                  │ 
 │        ├──► UC13: Teamplanning bekijken                         │ 
