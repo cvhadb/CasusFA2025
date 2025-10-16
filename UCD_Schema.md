@@ -17,7 +17,8 @@
 │      ├──► UC09: Plant details bekijken                          │
 │      ├──► UC10: Notificaties bekijken                           │
 │      ├──► UC11: Takenplanning per werknemer bekijken            │
-│      └──► UC12: Taken herplannen bij afwezigheid                │  
+│      ├──► UC12: Taken herplannen bij afwezigheid                │
+│      └──► UC16: Taken overzicht bekijken                        │  
 │                                                                 │
 │ ┌───────────┐                                                   │
 │ │ Supervisor│                                                   │
@@ -31,7 +32,8 @@
 │       ├──► UC10: Notificaties bekijken                          │
 │       ├──► UC05: Vestigingen beheren                            │
 │       ├──► UC06: Taken beheren                                  │
-│       └──► UC07: Werknemers beheren                             │
+│       ├──► UC07: Werknemers beheren                             │
+│       └──► UC16: Taken overzicht bekijken                       │
 │                                                                 │
 │ ┌──────────┐                                                    │
 │ │Werknemer │                                                    │
@@ -39,7 +41,7 @@
 │      │                                                          │
 │      ├──► UC14: Eigen planning bekijken                         │
 │      ├──► UC16: Taken overzicht bekijken                        │
-│      ├──► UC17: Taken filteren/zoeken                           │
+│      ├──► UC17: Eigen taken filteren/zoeken                     │
 │      ├──► UC18: Taak markeren als voltooid                      │
 │      ├──► UC19: Afwezigheid melden (ziekte)                     │
 │      ├──► UC20: Verlof aanvragen                                │
@@ -57,3 +59,45 @@
 │      └──► UC26: KPI's automatisch berekenen                     │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
+
+### <<include>> relaties:
+
+#### **UC02: Taken toewijzen en beheren (Manager)**
+- `<<include>>` **UC16: Taken overzicht bekijken (Manager)**
+
+#### **UC04: Centraal planningsbord gebruiken (Manager)**
+- `<<include>>` **UC16: Taken overzicht bekijken (Manager)**
+- `<<include>>` **UC11: Takenplanning per werknemer bekijken (Manager)**
+
+#### **UC12: Taken herplannen bij afwezigheid (Manager)**
+- `<<include>>` **UC16: Taken overzicht bekijken (Manager)**
+
+#### **UC13: Teamplanning bekijken (Supervisor)**
+- `<<include>>` **UC16: Taken overzicht bekijken (Supervisor)**
+
+#### **UC15: Taken van team filteren/zoeken (Supervisor)**
+- `<<include>>` **UC16: Taken overzicht bekijken (Supervisor)**
+
+#### **UC17: Taken filteren/zoeken eigen (Werknemer)**
+- `<<include>>` **UC16: Taken overzicht bekijken (Werknemer)**
+
+#### **UC21: Afwezigheden opvolgen (Werknemer)**
+- `<<include>>` **UC19: Afwezigheid melden (Werknemer)**
+- `<<include>>` **UC20: Verlof aanvragen (Werknemer)**
+
+
+### <<extends>> relaties:
+
+#### **UC22: Chatbot raadplegen (Werknemer)**
+- `<<extends>>` **UC16: Taken overzicht bekijken (Werknemer)**
+
+
+---
+
+## Want:
+
+✅ **Manager** moet de de taken (UC16) kunnen zien om ze toe te kennen (UC02)
+✅ **Supervisor** moet de taken (UC16) kunnen zien om het team te leiden (UC13, UC15)  
+✅ **Werknemer** moet zijn eigen taken (UC16) kunnen zien om ze te filteren (UC17)
+✅ **Werknemer** moet afwezigheden opvolgen (UC21) om afwezigheid te melden (UC19) en verlof aan te vragen (UC20)
+✅ **De Chatbot** (UC22) is een extra functionaliteit dat een werknemer toelaat taken overzicht te bekijken (UC16)
