@@ -11,9 +11,9 @@
 │       ├──► UC02: Taken toewijzen en beheren                     │ 
 │       ├──► UC03: Verlof goedkeuren/afwijzen                     │ 
 │       ├──► UC04: Centraal planningsbord gebruiken               │ 
-│       ├──► UC05: Vestigingen beheren (CRUD)                     │ 
-│       ├──► UC06: Taken beheren (CRUD)                           │ 
-│       ├──► UC07: Werknemers beheren (CRUD)                      │ 
+│       ├──► UC05: Vestigingen beheren                            │ 
+│       ├──► UC06: Taken beheren                                  │ 
+│       ├──► UC07: Werknemers beheren                             │ 
 │       ├──► UC08: Dashboard met KPI's bekijken                   │ 
 │       ├──► UC09: Plant details bekijken                         │ 
 │       ├──► UC10: Notificaties bekijken                          │ 
@@ -31,9 +31,9 @@
 │        ├──► UC14: Eigen planning bekijken                       │ 
 │        ├──► UC15: Taken van team filteren/zoeken                │ 
 │        ├──► UC10: Notificaties bekijken                         │ 
-│        ├──► UC05: Vestigingen beheren (CRUD)                    │ 
-│        ├──► UC06: Taken beheren (CRUD)                          │ 
-│        ├──► UC07: Werknemers beheren (CRUD)                     │ 
+│        ├──► UC05: Vestigingen beheren                           │ 
+│        ├──► UC06: Taken beheren                                 │ 
+│        ├──► UC07: Werknemers beheren                            │ 
 │        └──► UC16: Taken overzicht bekijken                      │ 
 │                                                                 │ 
 │  ┌──────────┐                                                   │ 
@@ -98,8 +98,8 @@
 
 ## Want:
 
-✅ **Manager** moet de de taken (UC16) kunnen zien om ze toe te kennen (UC02)
-✅ **Supervisor** moet de taken (UC16) kunnen zien om het team te leiden (UC13, UC15)  
-✅ **Werknemer** moet zijn eigen taken (UC16) kunnen zien om ze te filteren (UC17)
-✅ **Werknemer** moet afwezigheden opvolgen (UC21) om afwezigheid te melden (UC19) en verlof aan te vragen (UC20)
-✅ **De Chatbot** (UC22) is een extra functionaliteit dat een werknemer toelaat taken overzicht te bekijken (UC16)
+- ✅ **Manager** moet de de taken (UC16) kunnen zien om ze toe te kennen (UC02)
+- ✅ **Supervisor** moet de taken (UC16) kunnen zien om het team te leiden (UC13, UC15)
+- ✅ **Werknemer** moet zijn eigen taken (UC16) kunnen zien om ze te filteren (UC17)
+- ✅ **Werknemer** moet afwezigheden opvolgen (UC21) om afwezigheid te melden (UC19) en verlof aan te vragen (UC20)
+- ✅ **De Chatbot** (UC22) is een extra functionaliteit dat een werknemer toelaat taken overzicht te bekijken (UC16)
