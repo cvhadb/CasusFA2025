@@ -60,7 +60,7 @@
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 
-### <<include>> relaties:
+### `<<include>>` relaties:
 
 #### **UC02: Taken toewijzen en beheren (Manager)**
 - `<<include>>` **UC16: Taken overzicht bekijken (Manager)**
@@ -86,7 +86,7 @@
 - `<<include>>` **UC20: Verlof aanvragen (Werknemer)**
 
 
-### <<extends>> relaties:
+### `<<extends>>` relaties:
 
 #### **UC22: Chatbot raadplegen (Werknemer)**
 - `<<extends>>` **UC16: Taken overzicht bekijken (Werknemer)**
